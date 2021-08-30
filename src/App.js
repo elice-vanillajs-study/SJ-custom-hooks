@@ -1,16 +1,11 @@
 import React, { useState } from "react";
 import "./App.css";
-
-const useInput = (initialValue) => {
-  const [value, setValue] = useState(initialValue);
-  const onChange = (event) => {
-    console.log(event.target);
-  };
-  return { value, onChange };
-};
+import { useInput } from "./useInput";
 
 function App() {
-  const name = useInput("Mr.");
+  const maxLen = (value) => value.length <= 10;
+  const isNotEmail = (value) => !value.includes("@");
+  const name = useInput("Mr.", isNotEmail);
   return (
     <div className="App">
       <h1>Hello</h1>
