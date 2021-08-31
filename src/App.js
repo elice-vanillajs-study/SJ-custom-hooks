@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
-import { useInput } from "./useInput";
-import { useTab } from "./useTab";
+import { useInput } from "./hooks/useInput";
+import { useTab } from "./hooks/useTab";
 import { content } from "./constant";
 
 function App() {
