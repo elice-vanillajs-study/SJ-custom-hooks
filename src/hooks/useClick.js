@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 
 export const useClick = (onClick) => {
   if (typeof onClick !== "function") {
